@@ -60,53 +60,53 @@ $(window).resize(function() {
 
 
 // When the user selects a subscription tier, the radio buttons on the form are selected automatically
-function fillRadio(string) {
-  if (string === 'trial') {
-    $('input:radio[id=trialRad]').attr('checked', true);
-    $('input:radio[id=monthlyRad]').attr('checked', false);
-    $('input:radio[id=annualRad]').attr('checked', false);
-  } else if (string === 'monthly') {
-    $('input:radio[id=trialRad]').attr('checked', false);
-    $('input:radio[id=monthlyRad]').attr('checked', true);
-    $('input:radio[id=annualRad]').attr('checked', false);
-  } else if (string === 'annual') {
-    $('input:radio[id=trialRad]').attr('checked', false);
-    $('input:radio[id=monthlyRad]').attr('checked', false);
-    $('input:radio[id=annualRad]').attr('checked', true);
-  }
-}
+// function fillRadio(string) {
+//   if (string === 'trial') {
+//     $('input:radio[id=trialRad]').attr('checked', true);
+//     $('input:radio[id=monthlyRad]').attr('checked', false);
+//     $('input:radio[id=annualRad]').attr('checked', false);
+//   } else if (string === 'monthly') {
+//     $('input:radio[id=trialRad]').attr('checked', false);
+//     $('input:radio[id=monthlyRad]').attr('checked', true);
+//     $('input:radio[id=annualRad]').attr('checked', false);
+//   } else if (string === 'annual') {
+//     $('input:radio[id=trialRad]').attr('checked', false);
+//     $('input:radio[id=monthlyRad]').attr('checked', false);
+//     $('input:radio[id=annualRad]').attr('checked', true);
+//   }
+// }
 
 
 // Validate forms - check if the required forms are filled out. If they are filled and the user clicks the Submit button, the confirmation div shows and the window scrolls down to the confirmation div
-function validateForm(string) {
+// function validateForm(string) {
 
-  var firstName = document.forms.Form.firstname.value;
-  var lastName = document.forms.Form.lastname.value;
-  var email = document.forms.Form.email.value;
+//   var firstName = document.forms.Form.firstname.value;
+//   var lastName = document.forms.Form.lastname.value;
+//   var email = document.forms.Form.email.value;
 
-  if (string === "contact") {
-    if(firstName === "" || lastName ==="" || email ==="") {
-      return false;
-    } else {
-      scrollFunction('confirm');
-    }
-  }
+//   if (string === "contact") {
+//     if(firstName === "" || lastName ==="" || email ==="") {
+//       return false;
+//     } else {
+//       scrollFunction('confirm');
+//     }
+//   }
 
-  if (string === "account") {
-    var confirmEmail = document.forms.Form.confirmemail.value;
-    if(firstName === "" || lastName ==="" || email ==="" || confirmEmail === "") {
-      return false;
-    } else {
-      scrollFunction('confirm');
-    }
-  }
-  if (string === "subscription") {
-    if(firstName === "" || lastName ==="" || email ==="") {
-      return false;
-    } else {
-      scrollFunction('confirm');
-    }
-  }
-}
+//   if (string === "account") {
+//     var confirmEmail = document.forms.Form.confirmemail.value;
+//     if(firstName === "" || lastName ==="" || email ==="" || confirmEmail === "") {
+//       return false;
+//     } else {
+//       scrollFunction('confirm');
+//     }
+//   }
+//   if (string === "subscription") {
+//     if(firstName === "" || lastName ==="" || email ==="") {
+//       return false;
+//     } else {
+//       scrollFunction('confirm');
+//     }
+//   }
+// }
 
 jQuery(document).ready();
