@@ -5,8 +5,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  /* padding: 9rem 3.8rem; */
-  padding: 11rem 5.8% 9rem;
+  padding: 9rem 3.8rem;
 }
 
 .main-header h1{
@@ -81,7 +80,6 @@
 
 .seeda-benefits-container li{
   margin-top: 0.8rem;
-  margin-left: -1.4rem;
 }
 
 .benefits.image-container {
@@ -95,17 +93,17 @@
 }
 
 /* Services Section Styling */
-/* #services{
+#services{
   margin-left: 1rem;
   margin-right: 1rem;
 }
 
 #services.container{
   margin-top: -1.5rem;
-} */
+}
 
 /* Container for Service Listings */
-/* .service-listing-container{
+.service-listing-container{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -119,18 +117,18 @@
   margin-left: 2rem;
   margin-right: 2rem;
   margin-bottom: 2rem;
-} */
+}
 
 /* Sevice Listing Styling */
-/* .service-listing{
+.service-listing{
   background: #ffffff;
   padding: 2rem;
-} */
+}
 
 /* Service Listing Image Size */
-/* .service-listing img{
+.service-listing img{
   width: 100%;
-} */
+}
 
 /* MEDIA QUERIES */
 /* Screen size below 320px */
@@ -146,8 +144,7 @@
 @media screen and (max-width:30rem){
 
   .main-header{
-    /* padding: 6.5rem 3.5rem 3.5rem; */
-    padding: 6.5rem 9% 3.5rem;
+    padding: 3.5rem 3.8rem;
   }
 
   .main-header h1{
@@ -175,14 +172,14 @@
 
   #about-seerem .image-container{
     margin: 0 auto;
-    margin-top: 6rem;
+    margin-top: 2rem;
     max-width: 90%;
   }
 
-  /* .service-listing-container{
+  .service-listing-container{
     flex-direction: column;
     margin-top: 1rem;
-  } */
+  }
 
   .seeda-features-container{
     order: 1;
@@ -193,7 +190,7 @@
   .features.image-container{
     order: 2;
     margin-top: -0.5rem;
-    max-width: 100%;
+    max-width: 90%;
     padding-left: 2rem;
   }
 
@@ -208,16 +205,15 @@
     padding-left: 2rem;
   }
 
-  /* #services.container{
+  #services.container{
     margin-top: -3rem;
-  } */
+  }
 }
 
 /* Screen size of 480px - 800px */
 @media screen and (min-width:30rem) and (max-width: 50rem){
   .main-header{
-    /* padding: 8rem 3.4rem 5rem; */
-    padding: 8rem 7% 5rem;
+    padding: 5rem 3.8rem;
   }
 
   .main-header h1{
@@ -245,18 +241,18 @@
 
   #about-seerem .image-container{
     margin: 0 auto;
-    margin-top: 6rem;
+    margin-top: 2rem;
     max-width: 90%;
   }
 
-  /* .service-listing-container{
+  .service-listing-container{
     flex-direction: column;
     margin-top: 1rem;
   }
 
   .service-listing{
     padding: 3.5rem;
-  } */
+  }
 
   .seeda-features-container {
     padding-left: 1rem;
@@ -285,7 +281,7 @@
 @media screen and (min-width: 50rem) and (max-width: 60rem){
 
   .main-header{
-    padding: 9rem 3.8rem 6rem;
+    padding: 6rem 3.8rem;
   }
 
   .main-header h1{
@@ -308,11 +304,11 @@
 
   #about-seerem .image-container{
     margin: 0 auto;
-    margin-top: 6rem;
+    margin-top: 2rem;
     max-width: 90%;
   }
 
-  /* .service-listing-container{
+  .service-listing-container{
     flex-direction: column;
     margin-top: 1rem;
   }
@@ -327,7 +323,7 @@
 
   .service-listing img{
     margin-bottom: 1rem;
-  } */
+  }
 
   .seeda-features-container {
     order: 1;
