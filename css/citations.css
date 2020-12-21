@@ -1,0 +1,41 @@
+.container{
+	padding: 1rem 1rem;
+	margin-bottom: 2rem;
+}
+
+/* Citation List One */
+.one.citations{
+	margin-right: 15%;
+}
+
+/* Citation List Two */
+.two.citations{
+	margin-right: 1rem;
+}
+
+/* Citation List Styling */
+.citations ul{
+	list-style-type: none;
+}
+
+.citations li{
+	margin-top: 1.2rem;
+}
+
+/* Screen size of up to 1264px */
+@media screen and (max-width: 79rem){
+	.one.citations{
+		margin-right: 2%;
+	}
+
+	.two.citations{
+		margin-top: -1rem;
+	}
+}
+
+/* Screen size of 1264px to 1472px */
+@media screen and (min-width: 79rem) and (max-width: 92rem){
+	.one.citations{
+		margin-right: 2%;
+	}
+}

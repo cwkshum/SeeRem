@@ -1,0 +1,311 @@
+/* Container For Page Layout*/
+#container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#container .box1, #container .box2{
+	padding: 2rem;
+}
+
+.box1{
+	flex: 1;
+	margin-left: 1rem;
+}
+
+.box2{
+	flex: 2;
+	margin-top: 3.2rem;
+	margin-right: 1rem;
+}
+
+/* Page Lavigation Links*/
+.page-nav{
+	display: block;
+	margin-bottom: 0.8rem;
+	color: #954749;
+}
+
+.page-nav:hover, .page-nav:focus{
+	color: #3C3C3C;
+}
+
+/* Page Subheadings*/
+.subheading{
+	padding-bottom: 0.8rem;
+	border-bottom: 2px solid;
+	margin-right: 40%;
+}
+
+/* page subsections */
+section{
+	padding-bottom: 1rem;
+	margin-bottom: 1.6rem;
+}
+
+.element{
+	border-bottom: 1px solid #bbb;
+}
+
+code{
+	word-wrap: break-word;
+}
+
+/*list styling*/
+li{
+	margin-top: 0.8rem;
+}
+
+/* Service Listing Container*/
+.service-container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-top: 1rem;
+	margin-right: 10rem;
+	margin-bottom: 2rem;
+}
+
+/* Sevice Listing Styling */
+.service-listing{
+	background: #ffffff;
+	padding: 3rem;
+}
+
+/* Service Listing Image Size */
+.service-listing img{
+	width: 100%;
+}
+
+/* Contact Sales Container Styling */
+.contact-sales-container{
+	flex: 1;
+	padding: 2rem;
+	margin-left: 0;
+	margin-right: 10rem;
+	margin-bottom: 3rem;
+	background: #ffffff;
+}
+
+/* Contact Sales Subheading Styling */
+.contact-sales-container h4{
+	margin-left: 0.8rem;
+}
+
+/* Form Section Styling */
+.solo.form-section{
+	margin-top: -1.5rem;
+	margin-bottom: 0;
+	margin-left: 0;
+}
+
+.form-section{
+	margin-top: 0.5rem;
+	display: inline-block;
+	width: 40%;
+	margin-bottom: -1.5rem;
+	margin-right: 10%;
+}
+
+.form-section p{
+	margin-top: -0.3rem;
+}
+
+/* Radio Button Styling */
+.radio-btn {
+	display: block;
+  	padding-left: 1.5rem;
+  	margin-top: 0.5rem;
+}
+
+/* Styling for all Confirmation Containers */
+.confirmation-container h4{
+	margin-left:0.8rem;
+	max-width: 100%;
+}
+
+.confirmation-container{
+	margin-left: 0;
+	margin-right: 10rem;
+}
+
+.confirmation-container {
+  display: block;
+}
+
+/* Image Gallery Styling */
+.image-gallery{
+    display: flex;
+    flex-direction: column;
+	flex-wrap: wrap;
+}
+
+figure{
+	flex: 1;
+	margin-top: 3rem;
+	margin-left: 0;
+}
+
+figcaption{
+	margin-top: 0.8rem;
+}
+
+.image-gallery img{
+	width: 60%;
+}
+
+/* MEDIA QUERIES */
+/* Screen size of 480px or less */
+@media screen and (max-width:30rem){
+	#container{
+		flex-direction: column;
+	}
+
+	.box1{
+		margin-left: 1rem;
+	}
+
+	.box2{
+		margin-top: -4rem;
+		margin-left: 1rem;
+	}
+
+	p{
+		max-width: 100%;
+	}
+
+	.nav-logo img{
+		width: 5rem;
+		margin-left: -2rem;
+	}
+
+	.mobile-nav .btn {
+		margin: 0.5rem 2rem;
+	}
+
+	code{
+		word-break: break-word;
+	}
+
+	.service-container, .contact-sales-container, .confirmation-container{
+		margin-right: 0;
+	}
+
+	.solo.form-section{
+		width: 50%;
+	}
+
+	.form-section{
+		display: block;
+		width: 90%;
+	}
+
+	.radio-btn {
+	  	margin-top: 0.3rem;
+	}
+
+	.image-gallery{
+    	text-align: center;
+	}
+
+	img, .image-gallery img{
+		width: 80%;
+	}
+}
+
+/* Screen size of 480px - 768px */
+@media screen and (min-width:30rem) and (max-width: 48rem){
+	#container{
+		flex-direction: column;
+	}
+
+	.box1{
+		margin-left: 1rem;
+	}
+
+	.box2{
+		margin-top: -3rem;
+		margin-left: 1rem;
+	}
+
+	code{
+		word-break: break-word;
+	}
+
+	.mobile-nav .btn {
+		margin: 0.5rem 3rem;
+	}
+
+	.service-container, .contact-sales-container, .confirmation-container{
+		margin-right: 0;
+	}
+
+	.solo.form-section{
+		width: 50%;
+	}
+
+	.form-section{
+		display: block;
+		width: 100%;
+	}
+
+	.image-gallery{
+    	text-align: center;
+	}
+
+	img, .image-gallery img{
+		width: 80%;
+	}
+}
+
+/* Screen size of 768px - 960px */
+@media screen and (min-width:48rem) and (max-width: 60rem){
+	#container{
+		flex-direction: column;
+	}
+
+	.box1{
+		margin-left: 1rem;
+	}
+
+	.box2{
+		margin-top: -3.5rem;
+		margin-left: 1rem;
+	}
+
+	.mobile-nav .btn {
+		margin: 0.5rem 3rem;
+	}
+
+	.form-section{
+		margin-right: 12%;
+	}
+
+	.image-gallery{
+    	text-align: center;
+	}
+
+}
+
+/* Screen size of 960px - 1248px */
+@media screen and (min-width: 60rem) and (max-width: 78rem){
+	#container{
+		flex-direction: column;
+	}
+
+	.box1{
+		margin-left: 1rem;
+	}
+
+	.box2{
+		margin-top: 0;
+		margin-left: 1rem;
+	}
+
+	.page-nav{
+		display: inline-block;
+		margin-right: 2.5rem;
+		margin-bottom: 0.8rem;
+	}
+}

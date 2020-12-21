@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<!-- Website Tab Title -->
+    	<title>Account | SeeRem</title>
+
+    	<!-- Website Tab Icon -->
+    	<link rel="icon" href="img/sq_logo.png" type="image/png">
+
+    	<!-- Linked Google Fonts -->
+    	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@600;700&display=swap" rel="stylesheet">
+
+    	<!-- Linked Style Sheets -->
+    	<link href="css/main.css" rel="stylesheet">
+    	<link href="css/account.css" rel="stylesheet">
+
+		<!-- JavaScript -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="js/logic.js"></script>
+  	</head>
+
+  	<body>
+  		<!-- Navigation -->
+		<nav class="main-nav">
+			<!-- Navigation Logo -->
+			<div class="nav-logo">
+				<a href="index.html"><img src="img/seeremlogo2.png" alt="SeeRem Logo"></a>
+			</div>
+			<!-- Mobile Navigation -->
+			<div class="mobile-nav">
+				<p class="btn" onclick="changeNav()">MENU</p>
+			</div>
+			<!-- Navigation Links -->
+			<div class="nav-link-section">
+				<a href="index.html" class="nav-link">Home</a>
+				<a href="index.html#services" class="nav-link">Services</a>
+				<a href="contact.html" class="nav-link">Contact</a>
+			</div>
+		</nav>
+
+
+	    <!-- Header -->
+	    <header class="sub-header">
+	    	<h1>Account Registration</h1>
+	    </header>
+
+	    <!-- Form Confirmation Message -->
+		<div class="hidden container">
+			<div class="confirmation-container">
+				<h2>Account Confirmation</h2>
+				<p>You have successfully created your SeeRem account. The journey to better remote communication starts now! You will receive an email confirming your account details shortly. If you do not receive an email within 1 hour, please contact our team <a href="contact.html">here</a>.</p>
+			</div>
+		</div>
+
+	    <div class="container">
+	    	<!-- Information About Creating an Account -->
+	    	<div class="page-description">
+	    		<h2>Creating a SeeRem Account</h2>
+	    		<p>With a SeeRem account, your company will be one step closer to achieving better remote communication between your staff and work sites. Your account will be linked to the SeeRem application, giving your company access to the available abilities of locating devices, classifying users and making remote connections through the channels that have been approved. If you have any concerns regarding your SeeRem account, please <a class="intext-link" href="contact.html">contact</a> our team.</p>
+	    	</div>
+	    	<!-- Image -->
+	    	<div class="image-container">
+		       	<img src="img/register.jpg" alt="Create Account">
+	    	</div>
+		</div>
+		<!-- Create Account Form -->
+		<div class="container">
+			<div class="form-container">
+		       	<h2>Create Account</h2>
+		        <form class="account-form" name="Form" onsubmit="return false">
+			        <!-- First Name Input Box -->
+			        <div class="form-section">
+				  		<label class="form-label" for="firstname">First Name</label><br>
+				  		<input class="text-input" type="text" id="firstname" name="firstname" placeholder="First" required>
+				  	</div>
+			        <!-- Last Name Input Box -->
+				  	<div class="form-section">
+					  	<label class="form-label" for="lastname">Last Name</label><br>
+					  	<input class="text-input" type="text" id="lastname" name="lastname" placeholder="Last" required>
+				  	</div>
+			        <!-- Email Address Input Box -->
+				  	<div class="form-section">
+				  		<label class="form-label" for="email">Email Address</label><br>
+			  			<input class="text-input" type="email" id="email" name="email" placeholder="email@gmail.com" required>
+		  			</div>
+			        <!-- Confirm Email Address Input Box -->
+		  			<div class="form-section">
+			  			<label class="form-label" for="confirmemail">Confirm Email Address</label><br>
+			  			<input class="text-input" type="email" id="confirmemail" name="confirmemail" placeholder="email@gmail.com" required>
+			  		</div>
+				  	<!-- Create Account Button -->
+			  		<div class="action-btn-container">
+			  			<input onclick="validateForm('account')" class="action-btn" type="submit" value="Create Account">
+			  		</div>
+				</form>
+			</div>
+		</div>
+
+		<!-- Scroll up to Top Button -->
+		<div id="scrollUpbtn" onclick="toTop()">TOP</div>
+
+		<!-- Footer -->
+		<footer>
+			<div class="footer-navigation">
+				<!-- Site Navigation Section -->
+				<h4>Navigation</h4>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="index.html#services">Services</a></li>
+					<li><a href="subscription.html">Subscription</a></li>
+				</ul>
+				<ul>
+					<li><a href="account.html">Account</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="https://www.seeda.ca/home" target="_blank">Seeda</a></li>
+				</ul>
+				<ul>
+					<li><a href="citations.html" target="_blank">Citations</a></li>
+					<li><a href="styleguide.html" target="_blank">Style Guide</a></li>
+					<li><a href="https://github.com/cwkshum/IAT339_SeeRem_P02" target="_blank">GitHub</a></li>
+				</ul>
+			</div>
+			<div class="footer-contact">
+				<!-- Contact Information Section -->
+				<h4>Contact</h4>
+				<ul>
+					<li>Location: Suite 2000, 125 9 Avenue SE, Calgary, AB, T2G 0P6</li>
+					<li>Email Address: support@seerem.com</li>
+					<li>Phone: +1 (403) 966 9848</li>
+				</ul>
+			</div>
+			<div class="footer-social">
+				<!-- Social Media Section -->
+				<h4>Social Media</h4>
+				<a href="https://twitter.com/SeedaInc" target="_blank"><img src="img/twitter.png" alt="Twitter Logo"></a>
+				<a href="https://www.facebook.com/seeda.ca" target="_blank"><img src="img/facebook.png" alt="Facebook Logo"></a>
+				<a href="https://www.linkedin.com/company/seeda.ca" target="_blank"><img src="img/linkedin.png" alt="LinkedIn Logo"></a>
+			</div>
+		</footer>
+  	</body>
+</html>

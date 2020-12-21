@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    	<!-- Website Tab Title -->
+    	<title>Subscription Plans | SeeRem</title>
+
+		<!-- Website Tab Icon -->
+    	<link rel="icon" href="img/sq_logo.png" type="image/png">
+
+    	<!-- Linked Google Fonts -->
+    	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@600;700&display=swap" rel="stylesheet">
+
+    	<!-- Linked Style Sheets -->
+    	<link href="css/main.css" rel="stylesheet">
+    	<link href="css/subscription.css" rel="stylesheet">
+
+		<!-- JavaScript -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="js/logic.js"></script>
+  	</head>
+
+  	<body>
+			<!-- Navigation -->
+			<nav class="main-nav">
+				<!-- Navigation Logo -->
+				<div class="nav-logo">
+					<a href="index.html"><img src="img/seeremlogo2.png" alt="SeeRem Logo"></a>
+				</div>
+				<!-- Mobile Navigation -->
+				<div class="mobile-nav">
+					<p class="btn" onclick="changeNav()">MENU</p>
+				</div>
+				<!-- Navigation Links -->
+				<div class="nav-link-section">
+					<a href="index.html" class="nav-link">Home</a>
+					<a href="index.html#services" class="nav-link">Services</a>
+					<a href="contact.html" class="nav-link">Contact</a>
+				</div>
+			</nav>
+
+	    <!-- Header -->
+	    <header class="sub-header">
+	    	<h1>Subscription Plans</h1>
+	    </header>
+
+	    <!-- Form Confirmation Message -->
+		<div class="hidden container">
+			<div class="confirmation-container">
+				<h2>Subscription Confirmation</h2>
+				<p>Thank you for contacting our sales team! We will review your subscription request and get back to you shortly with further details on how to complete your subscription purchase. If you do not receive a response within two business days, please contact us <a href="contact.html">here</a>.</p>
+			</div>
+		</div>
+
+	    <div class="container">
+	    	<!-- Subscription Plan Information -->
+	    	<div class="page-description">
+		    	<h2>SeeRem Subscription Plans</h2>
+		    	<p>We offer multiple subscription plans to suit the needs of all businesses. No matter the size of your team, the scale of the project, or the time length, SeeRem can help you connect when you need it most. Test out remote communication today with our 30 day trial version free of charge. Contact our sales team below for further details on downloading your trial version or purchasing a full subscription.</p>
+	    	</div>
+	    	<!-- Image -->
+	    	<div class="image-container">
+		       	<img src="img/construction.jpg" alt="Purchase Subscription">
+	    	</div>
+		</div>
+
+		<!-- Subscription Plan Options -->
+		<div class="subscription-container">
+			<!-- First Subscription Plan: Free -->
+	    	<div class="subscription-one">
+		    	<h3>Trial Version</h3>
+		    	<hr>
+		    	<!-- price -->
+		    	<h4>Free</h4>
+		    	<!-- details -->
+		    	<ul>
+		    		<li>30 day access</li>
+		    		<li>Explore all features and functions</li>
+		    		<li>Support documentation access</li>
+		    	</ul>
+					<!-- onclick="scrollTo('#contact-sales')" -->
+					<button onclick="fillRadio('trial') ; scrollFunction('form')" class="btn select-btn">Select</button>
+	    	</div>
+			<!-- Second Subscription Plan: Monthly -->
+	    	<div class="subscription-two">
+		       	<h3>Monthly Subscription</h3>
+		       	<hr>
+		       	<!-- price -->
+		       	<h4>$12/month</h4>
+		       	<!-- details -->
+		    	<ul>
+		    		<li>Charged monthly</li>
+		    		<li>Support documentation access</li>
+		    		<li>Access to SeeRem’s direct support line</li>
+		    	</ul>
+					<button onclick="fillRadio('monthly') ; scrollFunction('form')" class="btn select-btn">Select</button>
+	    	</div>
+			<!-- First Subscription Plan: Annual -->
+	    	<div class="subscription-three">
+		       	<h3>Annual Subscription</h3>
+		       	<hr>
+		       	<!-- price -->
+		       	<h4>$120/year</h4>
+		       	<!-- details -->
+		    	<ul>
+		    		<li>Charged once annually</li>
+		    		<li>Support documentation access</li>
+		    		<li>Access to SeeRem’s direct support line</li>
+		    	</ul>
+					<button onclick="fillRadio('annual') ; scrollFunction('form')" class="btn select-btn">Select</button>
+	    	</div>
+		</div>
+
+		<!-- Contact Sales Form -->
+		<div id="#contact-sales" class="container">
+			<div class="form-container">
+		       	<h2>Contact Sales</h2>
+		        <form class="contact-form" name="Form" onsubmit="return false">
+			        <!-- First Name Input Box -->
+			        <div class="form-section">
+				  		<label class="form-label" for="firstname">First Name</label><br>
+				  		<input class="text-input" type="text" id="firstname" name="firstname" placeholder="First" required>
+				  	</div>
+			        <!-- Last Name Input Box -->
+				  	<div class="form-section">
+					  	<label class="form-label" for="lastname">Last Name</label><br>
+					  	<input class="text-input" type="text" id="lastname" name="lastname" placeholder="Last" required>
+				  	</div>
+			        <!-- Email Address Input Box -->
+				  	<div class="form-section">
+				  		<label class="form-label" for="email">Email Address</label><br>
+			  			<input class="text-input" type="email" id="email" name="email" placeholder="email@gmail.com" required>
+		  			</div>
+			        <!-- Phone Number Input Box -->
+		  			<div class="form-section">
+			  			<label class="form-label" for="phone">Phone Number</label><br>
+		  				<input class="text-input" type="text" id="phone" name="phone" placeholder="012-345-6789">
+			  		</div>
+			  		<!-- Subscription Plan Selection -->
+			  		<div class="form-section">
+	  					<p class="form-label">Subscription Plan</p>
+			  			<label class="radio-btn form-label">Trial
+	 						<input type="radio" id="trialRad" name="radio" checked>
+	  						<span class="radio-select"></span>
+						</label>
+						<label class="radio-btn form-label">Monthly
+		 					<input type="radio" id="monthlyRad" name="radio">
+		  					<span class="radio-select"></span>
+						</label>
+						<label class="radio-btn form-label">Annual
+		 					<input type="radio" id="annualRad" name="radio">
+		  					<span class="radio-select"></span>
+						</label>
+			  		</div>
+				  	<!-- Contact Sales Submit Button -->
+			  		<div class="action-btn-container">
+			  			<input class="action-btn" type="submit" value="Submit" onclick="validateForm('subscription')">
+			  		</div>
+				</form>
+			</div>
+		</div>
+
+		<!-- Scroll to top Button -->
+		<div id="scrollUpbtn" onclick="toTop()">TOP</div>
+
+		<!-- Footer -->
+		<footer>
+			<div class="footer-navigation">
+				<!-- Site Navigation Section -->
+				<h4>Navigation</h4>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="index.html#services">Services</a></li>
+					<li><a href="subscription.html">Subscription</a></li>
+				</ul>
+				<ul>
+					<li><a href="account.html">Account</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="https://www.seeda.ca/home" target="_blank">Seeda</a></li>
+				</ul>
+				<ul>
+					<li><a href="citations.html" target="_blank">Citations</a></li>
+					<li><a href="styleguide.html" target="_blank">Style Guide</a></li>
+					<li><a href="https://github.com/cwkshum/IAT339_SeeRem_P02" target="_blank">GitHub</a></li>
+				</ul>
+			</div>
+			<div class="footer-contact">
+				<!-- Contact Information Section -->
+				<h4>Contact</h4>
+				<ul>
+					<li>Location: Suite 2000, 125 9 Avenue SE, Calgary, AB, T2G 0P6</li>
+					<li>Email Address: support@seerem.com</li>
+					<li>Phone: +1 (403) 966 9848</li>
+				</ul>
+			</div>
+			<div class="footer-social">
+				<!-- Social Media Section -->
+				<h4>Social Media</h4>
+				<a href="https://twitter.com/SeedaInc" target="_blank"><img src="img/twitter.png" alt="Twitter Logo"></a>
+				<a href="https://www.facebook.com/seeda.ca" target="_blank"><img src="img/facebook.png" alt="Facebook Logo"></a>
+				<a href="https://www.linkedin.com/company/seeda.ca" target="_blank"><img src="img/linkedin.png" alt="LinkedIn Logo"></a>
+			</div>
+		</footer>
+  	</body>
+</html>
