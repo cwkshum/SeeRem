@@ -396,7 +396,7 @@ footer li{
 
 /* Footer Navigation Section Styling */
 .footer-navigation{
-	flex: 3;
+	flex: 2;
 }
 
 .footer-navigation a{
@@ -431,13 +431,47 @@ footer li{
 	flex: 1;
 }
 
+.footer-social section{
+	display: inline;
+}
+
 .footer-social img{
 	width: 15%;
+	/*width: 100%;*/
 	margin-right: 0.5rem;
 }
 
 
 /* MEDIA QUERIES */
+
+/* Screen size of 320px - 480px */
+@media screen and (max-width:20rem){
+
+	body {
+		font-size: 0.75rem;
+	}
+
+	footer{
+		flex-direction: column;
+		font-size: 0.75rem;
+		padding: 1rem;
+	}
+
+	footer h4{
+		font-size: 0.8rem;
+	}
+
+	.footer-navigation ul{
+		margin-right: 1.5rem;
+	}
+
+	.footer-social img{
+		width: 2rem;
+		margin-right: 0.5rem;
+		padding: 0.1rem;
+	}
+}
+
 
 /* Screen size of 320px - 480px */
 @media screen and (min-width:20rem) and (max-width:30rem){
@@ -557,9 +591,18 @@ footer li{
 /* Screen size of 1040px - 1440px */
 @media screen and (min-width:65rem) and (max-width:90rem){
 
+	.footer-social section{
+		display: block;
+		margin-bottom: 0.5rem;
+	}
+
 	.footer-social img{
-		width: 20%;
-		margin-right: 0.5rem;
+		width: 22%;
+		margin-right: 0.8rem;
+	}
+
+	.footer-social{
+
 	}
 
 	#scrollUpbtn {
