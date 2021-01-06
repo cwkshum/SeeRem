@@ -59,7 +59,7 @@ img{
 
 .nav-logo img{
 	width: 8rem;
-	padding: 1rem;
+	padding: 1rem 0.9rem;
 }
 
 /* Navigation Links */
@@ -138,75 +138,6 @@ header h1{
 	padding-left: 1rem;
 }
 
-/* Form Styling */
-/*
-.contact-form{
-	background: #ffffff;
-	margin-top: -1.5rem;
-	padding-left: 2rem;
-	padding-bottom: 1.2rem;
-}
-
-.form-container{
-	flex: 1;
-	padding: 2rem;
-	margin-left: 1rem;
-	margin-right: 1rem;
-	margin-bottom: 3rem;
-	background: #ffffff;
-}
-
-.form-container h2{
-	margin-left: 0.8rem;
-}
-
-.form-section{
-	padding-top: 2rem;
-	margin-bottom: -2rem;
-	margin-left: -1rem;
-	margin-right: 5rem;
-	display: inline-block;
-}
-
-.form-section p{
-	margin-top: 0.2rem;
-}
-
-.form-label{
-	color: #3C3C3C;
-}
-
-.learn-more{
-  	margin-top: 2.5rem;
-  	margin-bottom: 0.5rem;
-}
-*/
-
-/* Styling Text Input Box */
-/* .text-input{
-	padding: 0.5rem;
-	margin-top: 0.5rem;
-	margin-bottom: 0.7rem;
-	border: 1px solid #3C3C3C;
-	border-radius: 0.4rem;
-	font-family: 'Open Sans', sans-serif;
-	transition: 0.5s;
-}
-
-.text-input:hover{
-	background: #ECDEDE;
-}
-
-.text-input:focus{
-	border: 1px solid #AE3034;
-	background: #F5F5F5;
-} */
-
-/* Change Size of Text Input Field */
-/* input[type = "text"], input[type="email"]{
-  	width: 100%;
-} */
-
 /* Button Container */
 .action-btn-container {
 	margin-top: 3rem;
@@ -242,6 +173,20 @@ header h1{
 	transition: 0.3s;
 }
 
+#scrollUpbtn h3{
+	color: #ffffff;
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#scrollUpbtn h3:hover{
+	color: #954749;
+}
+
+#scrollUpbtn h3:focus{
+  	color: #3C3C3C;
+}
+
 .btn:hover, #scrollUpbtn:hover{
   	border: 2px solid #954749;
   	background: #F5F5F5;
@@ -253,116 +198,6 @@ header h1{
   	background: #F5F5F5;
   	color: #3C3C3C;
 }
-
-/* Styling Radio Buttons*/
-/* .radio-btn {
-  	display: inline;
-  	position: relative;
-  	padding-left: 1.5rem;
-  	margin-right: 3rem;
-  	cursor: pointer;
-} */
-
-/* Hide the browser's default radio button */
-/* .radio-btn input {
-  	position: absolute;
-  	opacity: 0;
-  	cursor: pointer;
-} */
-
-/* Custom radio button */
-/*
-.radio-select {
-  	position: absolute;
-  	top: 0;
-  	left: 0;
-  	margin-top: 0.2rem;
-  	height: 0.8rem;
- 	width: 0.8rem;
-  	background-color: #ffffff;
-  	border: 1px solid #3C3C3C;
-  	border-radius: 50%;
-}
-
-.radio-btn:hover input ~ .radio-select {
-  	border: 1px solid #3C3C3C;
-	background: #ECDEDE;
-}
-*/
-
-/* When the radio button is selected */
-/* .radio-btn input:checked ~ .radio-select {
-  	border: 1px solid #AE3034;
-} */
-
-/* Create the indicator (the dot/circle - hidden when not checked) */
-/* .radio-select:after {
-  	content: "";
-  	position: absolute;
-  	display: none;
-} */
-
-/* Show the indicator (dot/circle) when checked */
-/* .radio-btn input:checked ~ .radio-select:after {
-  	display: block;
-} */
-
-/* Style the indicator (dot/circle) of the radio button*/
-/* .radio-btn .radio-select:after {
- 	top: 0;
-	left: 0;
-	width: 0.8rem;
-	height: 0.8rem;
-	border-radius: 50%;
-	background: #954749;
-} */
-
-/* Submit Button Styling */
-
-
-/* .action-btn{
-	padding: 0.8rem 3rem;
-	margin-right: 0.5rem;
-	border-radius: 10px;
-	border: 2px solid #954749;
-	background: #954749;
-	color: #ffffff;
-	font-family: 'Open Sans', sans-serif;
-	transition: 0.3s;
-}
-
-.action-btn:hover{
-	border: 2px solid #954749;
-	background: #ffffff;
-	color: #954749;
-}
-
-.action-btn:focus{
-	border: 2px solid #3C3C3C;
-	background: #F5F5F5;
-	color: #3C3C3C;
-} */
-
-/* Styling for all Confirmation Containers */
-/* .confirmation-container h2, .confirmation-container p {
-	margin-left:0.8rem;
-	max-width: 100%;
-}
-
-.confirmation-container{
-	flex: 1;
-	padding: 2rem;
-	margin: 1rem 1rem 0 1rem;
-	background: #ffffff;
-}
-
-.confirmation-container {
-  display: none;
-}
-
-.hidden.container{
-	display: none;
-} */
 
 /* Footer Styling */
 footer{
@@ -450,6 +285,10 @@ footer li{
 		font-size: 0.75rem;
 	}
 
+	.nav-link-section a:hover, .nav-link-section a:focus {
+		border-bottom: 0.15rem solid #ffffff;
+	}
+
 	footer{
 		flex-direction: column;
 		font-size: 0.75rem;
@@ -504,6 +343,10 @@ footer li{
 		text-align: center;
 	}
 
+	.nav-link-section a:hover, .nav-link-section a:focus {
+		border-bottom: 0.15rem solid #ffffff;
+	}
+
 	.mobile-nav {
 		flex: 1;
 		font-size: 1rem;
@@ -547,12 +390,16 @@ footer li{
 	}
 
 	.nav-link{
-		margin-left: 2rem;
 		font-size: 1.1rem;
 	}
 
 	.nav-link-section a {
 		display: inline-block;
+		margin-right: 0;
+	}
+
+	.nav-link-section a:hover, .nav-link-section a:focus {
+		border-bottom: 0.15rem solid #ffffff;
 	}
 
 	.mobile-nav {
@@ -706,43 +553,4 @@ footer li{
 		margin-top: 2rem;
 		max-width: 75%;
 	}
-
-	/* .form-container{
-		padding: 2rem;
-	}
-
-	.account-form, .contact-form {
-		margin-left: -0.2rem;
-		margin-right: 1rem;
-	} */
 }
-
-/* Screen size of 480px - 896px */
-/* @media screen and (min-width: 30rem) and (max-width: 56rem){
-
-	.form-section{
-		display: block;
-		margin-right: 1.5rem;
-		margin-bottom: -1.5rem;
-	}
-
-} */
-
-/* Screen size of 800px - 896px */
-/* @media screen and (min-width:50rem) and (max-width: 56rem){
-
-	.form-container{
-		padding: 2rem;
-	}
-
-	.contact-form, .account-form{
-		margin-left: -0.2rem;
-		margin-right: 1rem;
-	}
-
-	.form-section{
-		display: block;
-		margin-right: 1.5rem;
-		margin-bottom: -1.5rem;
-	}
-} */
