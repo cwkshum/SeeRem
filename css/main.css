@@ -58,7 +58,7 @@ img{
 }
 
 .nav-logo img{
-	width: 8rem;
+	width: 12rem;
 	padding: 1rem 0.9rem;
 }
 
@@ -211,7 +211,6 @@ footer{
 }
 
 footer div{
-	/* padding: 0 2.5rem; */
 	padding: 0 5%;
 }
 
