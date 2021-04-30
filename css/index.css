@@ -45,18 +45,25 @@
   width: 100%;
 }
 
-/* Features, Benefits, CES Section Styling */
+/* Features, Benefits, Trade Shows Section Styling */
 .seerem.container{
   align-items: center;
 }
 
-.features.image-container, .ces.image-container {
+.features.image-container{
   flex: 1;
   order: 1;
   margin-left: 1rem;
 }
 
-.seerem-features-container, .ces-container{
+.trade-shows.image-container{
+  flex: 1;
+  order: 1;
+  margin-left: 1rem;
+  margin-right: 4.5rem;
+}
+
+.seerem-features-container, .trade-shows-container{
   flex: 1;
   order: 2;
   padding-right: 1rem;
@@ -64,7 +71,7 @@
   margin-bottom: 2rem;
 }
 
-.seerem-features-container p, .ces-container p{
+.seerem-features-container p, .trade-shows-container p{
   max-width: 100%;
 }
 
@@ -89,7 +96,7 @@
   padding-left: 4rem;
 }
 
-.features.image-container img, .benefits.image-container img, .ces.image-container img{
+.features.image-container img, .benefits.image-container img, .trade-shows.image-container img{
   width: 90%;
 }
 
@@ -144,7 +151,7 @@
     max-width: 90%;
   }
 
-  .seerem-features-container, .ces-container{
+  .seerem-features-container, .trade-shows-container{
     order: 1;
     padding-left: 1rem;
     margin-top: -3rem;
@@ -157,11 +164,11 @@
     padding-left: 2rem;
   }
 
-  .ces.image-container{
+  .trade-shows.image-container{
     order: 2;
     margin-top: -0.5rem;
     max-width: 60%;
-    padding-left: 1rem;
+    padding-left: 4rem;
     margin-bottom: 1rem;
   }
 
@@ -216,7 +223,7 @@
     max-width: 90%;
   }
 
-  .seerem-features-container, .ces-container {
+  .seerem-features-container, .trade-shows-container {
     padding-left: 1rem;
     order: 1;
   }
@@ -228,11 +235,11 @@
     padding-left: 4rem;
   }
 
-  .ces.image-container{
+  .trade-shows.image-container{
     margin-top: 0;
     order: 2;
     max-width: 60%;
-    padding-left: 2.5rem;
+    padding-left: 4rem;
     margin-bottom: 2rem;
     margin-left: 3.5rem;
   }
@@ -279,7 +286,7 @@
     max-width: 90%;
   }
 
-  .seerem-features-container, .ces-container {
+  .seerem-features-container, .trade-shows-container {
     order: 1;
     padding-left: 1rem;
   }
@@ -290,10 +297,10 @@
     padding-left: 6rem;
   }
 
-  .ces.image-container{
+  .trade-shows.image-container{
     order: 2;
     max-width: 60%;
-    padding-left: 2rem;
+    padding-left: 6rem;
     margin-bottom: 2rem;
   }
 
@@ -310,15 +317,19 @@
 
 /* Screen size above 960px */
 @media screen and (min-width:60rem){
+
   .main-header h2 {
     width: 26rem;
     font-size: 1.5rem;
     margin-top: -1.8rem;
   }
 
-  .ces.image-container{
+  .trade-shows.image-container{
     max-width: 40%;
     box-sizing: border-box;
     padding: 3%;
+
+    margin-left: 2rem;
+    margin-right: 4rem;
   }
 }
