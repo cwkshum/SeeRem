@@ -10,14 +10,14 @@ window.addEventListener('scroll', function () {
   $('#scrollUpbtn').css("display", "block");
 
   // Automatically hide an open mobile nav if the user scrolls
-  if ($(window).width() <= 960) {
-    $('.nav-link-section').css("visibility", "hidden");
-    $('.nav-link-section').css("opacity", "0");
-    setTimeout(function() {
-      $('.nav-link-section').css("display","none");
-    }, 300);
-    nav = 0;
-  }
+  // if ($(window).width() <= 960) {
+  //   $('.nav-link-section').css("visibility", "hidden");
+  //   $('.nav-link-section').css("opacity", "0");
+  //   setTimeout(function() {
+  //     $('.nav-link-section').css("display","none");
+  //   }, 300);
+  //   nav = 0;
+  // }
 });
 
 // Scroll to the top; activated when the scrollUpbtn is clicked
@@ -41,48 +41,48 @@ function scrollFunction(string) {
 // Change Mobile Nav on Menu button click
 var nav = 0; // off as default
 
-function changeNav() {
-  // if nav is off and the Menu button is clicked, show the navigation links if the screen size is under 960px
-  if (nav === 0) {
-    if ($(window).width() <= 960) {
-      $('.nav-link-section a').css("display", "block");
-      $('.nav-link-section').css("visibility", "visible");
-      $('.nav-link-section').css("opacity", "1");
-      setTimeout(function() {
-        $('.nav-link-section').css("display","block");
-      }, 300);
+// function changeNav() {
+//   // if nav is off and the Menu button is clicked, show the navigation links if the screen size is under 960px
+//   if (nav === 0) {
+//     if ($(window).width() <= 960) {
+//       $('.nav-link-section a').css("display", "block");
+//       $('.nav-link-section').css("visibility", "visible");
+//       $('.nav-link-section').css("opacity", "1");
+//       setTimeout(function() {
+//         $('.nav-link-section').css("display","block");
+//       }, 300);
 
-      nav = 1;
-    }
-  } else if (nav === 1) {
-    $('.nav-link-section').css("visibility", "hidden");
-    $('.nav-link-section').css("opacity", "0");
-    setTimeout(function() {
-      $('.nav-link-section').css("display","none");
-    }, 300);
-    nav = 0;
-  }
-}
+//       nav = 1;
+//     }
+//   } else if (nav === 1) {
+//     $('.nav-link-section').css("visibility", "hidden");
+//     $('.nav-link-section').css("opacity", "0");
+//     setTimeout(function() {
+//       $('.nav-link-section').css("display","none");
+//     }, 300);
+//     nav = 0;
+//   }
+// }
 
 // Change mobile navigation if the screen is resized. Navigation links are hidden whenever the window is resized.
-$(window).resize(function() {
-  if ($(window).width() <= 960) {
-    $('.mobile-nav').css("display", "inline-block");
-    $('.nav-link-section').css("visibility", "hidden");
-    $('.nav-link-section').css("opacity", "0");
-    setTimeout(function() {
-      $('.nav-link-section').css("display","none");
-    }, 300);
-    nav = 0;
-  } else if ($(window).width() >= 960) {
-    $('.mobile-nav').css("display", "none");
-    $('.nav-link-section').css("display","block");
-    $('.nav-link-section').css("visibility", "visible");
-    $('.nav-link-section').css("opacity", "1");
-    $('.nav-link-section a').css("display", "inline");
-    nav = 0;
-  }
-});
+// $(window).resize(function() {
+//   if ($(window).width() <= 960) {
+//     $('.mobile-nav').css("display", "inline-block");
+//     $('.nav-link-section').css("visibility", "hidden");
+//     $('.nav-link-section').css("opacity", "0");
+//     setTimeout(function() {
+//       $('.nav-link-section').css("display","none");
+//     }, 300);
+//     nav = 0;
+//   } else if ($(window).width() >= 960) {
+//     $('.mobile-nav').css("display", "none");
+//     $('.nav-link-section').css("display","block");
+//     $('.nav-link-section').css("visibility", "visible");
+//     $('.nav-link-section').css("opacity", "1");
+//     $('.nav-link-section a').css("display", "inline");
+//     nav = 0;
+//   }
+// });
 
 
 // When the user selects a subscription tier, the radio buttons on the form are selected automatically

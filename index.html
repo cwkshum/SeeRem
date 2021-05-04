@@ -24,6 +24,9 @@
 		<link href="css/main.css" rel="stylesheet">
 		<link href="css/index.css" rel="stylesheet">
 
+		<!-- Linked Icons -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 		<!-- JavaScript -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	  	<script src="js/logic.js"></script>
@@ -40,22 +43,41 @@
 	</head>
 
 	<body>
-		<!-- Navigation -->
+
+		<!-- Navigation 
 		<nav class="main-nav">
-			<!-- Navigation Logo -->
+			
 			<div class="nav-logo">
 				<a href="index.html"><img src="img/seeremlogo_min.png" alt="SeeRem Logo"></a>
 			</div>
-			<!-- Mobile Navigation -->
+			
 			<div class="mobile-nav">
 				<p class="btn" onclick="changeNav()">MENU</p>
 			</div>
-			<!-- Navigation Links -->
+			
 			<div class="nav-link-section">
 				<a href="index.html" class="nav-link">Home</a>
 				<a href="contact.html" class="nav-link">Contact</a>
 			</div>
+		</nav>-->
+
+
+
+		<!-- Navigation -->
+		<nav class="main-nav">
+			<!-- Navigation Logo -->
+			<a href="index.html" class="nav-logo"><img src="img/seeremlogo_min.png" alt="SeeRem Logo"></a>
+			<!-- Navigation Button For Mobile -->
+			<input class="menu-btn" type="checkbox" id="menu-btn" />
+			<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+			<!-- Navigation Links -->
+			<ul class="nav-link-section">
+		    	<li><a href="index.html" class="nav-link">Home</a></li>
+		    	<li><a href="contact.html" class="nav-link">Contact</a></li>
+		  	</ul>
 		</nav>
+
+
 
 		<!-- Header -->
 		<header class="main-header">
@@ -65,30 +87,30 @@
 
 		<!-- About Seerem Section -->
 		<div id="about-seerem" class="container">
+			<!-- Image Container -->
+			<div class="image-container">
+				<img src="img/about.jpg" alt="About Seerem">
+			</div>
 			<div class="page-description">
-				<h2>About Seerem</h2>
-				<p>SeeRem is an application that is aimed towards companies in the energy, construction, agricultural, and government industries, developed to improve the productivity of the company by connecting staff to the work sites in a fast and convenient way. The application allows a company’s staff to have the ability to locate devices, classify users, and make connections through official channels that are approved by the company. The SeeRem application further supports connections in a wide range of locations. Our SeeRem technology is designed to improve work sites visibility in an inexpensive and real-time manner.</p>
+				<h2>About SeeRem</h2>
+				<p>SeeRem is a mobile and web application that is aimed towards companies in the energy, construction, agricultural, and government industries, developed to improve the productivity of the company by connecting staff to the work sites in a fast and convenient way. The application allows a company’s staff to have the ability to locate devices, classify users, and make connections through official channels that are approved by the company. The SeeRem application further supports connections in a wide range of locations. Our SeeRem technology is designed to improve work sites visibility in an inexpensive and real-time manner. Get the application today to start your journey to better remote communication.</p>
 
 				<div class="action-btn-container">
 					<a href="contact.html" class="btn">Contact Us</a>
 				</div>
 			</div>
-			<!-- Image Container -->
-			<div class="image-container">
-				<img src="img/aboutseerem.jpg" alt="About Seerem">
-			</div>
 		</div>
 
 		<!-- SeeRem Features Section -->
 		<div class="seerem container">
-			<!-- Image Container -->
-			<div class="features image-container">
-				<img src="img/interface_mobile.png" alt="SeeRem Features">
-			</div>
 			<!-- About SeeRem's Features Container -->
 			<div class="seerem-features-container">
 				<h2>Features</h2>
 				<p>SeeRem will empower companies with more efficient access to vital project information, safe and fast communication with team personnel, and access to remote cameras, allowing for site checks and project overseeing from afar. The application can be accessed on smart devices in different areas to allow staff to connect visually with the work sites.</p>
+			</div>
+			<!-- Image Container -->
+			<div class="features image-container">
+				<img src="img/mobile_mockup.png" alt="SeeRem Features">
 			</div>
 		</div>
 
@@ -96,32 +118,71 @@
 		<div class="seerem container">
 			<!-- Image Container -->
 			<div class="benefits image-container">
-				<img src="img/desktop_sample.png" alt="SeeRem Benefits">
+				<img src="img/desktop_mockup.png" alt="SeeRem Benefits">
 			</div>
 			<!-- About SeeRem's Benefits Container -->
 			<div class="seerem-benefits-container">
 				<h2>Benefits</h2>
-				<p>Managing communication with SeeRem offers faster and more reliable connections to your team members. Get the application today to start your journey to better remote communication.</p>
-				<ul>
-					<li>More efficient project management</li>
-					<li>Reduced travel expenses</li>
-					<li>Records of critical company information</li>
-					<li>Immediate access to remote cameras</li>
-				</ul>
+				<div class="grid-container">
+					<!-- Benefit One -->
+					<div>
+						<i class="fa fa-laptop"></i>
+						<h3>Project Management</h3>
+						<p>SeeRem offers faster and more reliable connections with team members.</p>
+					</div>
+
+					<!-- Benefit Two -->
+					<div>
+						<i class="fa fa-briefcase"></i>
+						<h3>Company Records</h3>
+						<p>Store records of critical company information on the SeeRem application.</p>
+					</div>
+
+					<!-- Benefit Three -->
+					<div>
+						<i class="fa fa-plane"></i>
+						<h3>Reduced Travel</h3>
+						<p>Access to remote views of the worksite helps to lower travel expenses.</p>
+					</div>
+					
+					<!-- Benefit Four -->
+					<div>
+						<i class="fa fa-camera"></i>
+						<h3>Remote Cameras</h3>
+						<p>Observe active company worksites with SeeRem’s remote camera feature.</p>
+					</div>	
+				</div>
 			</div>
 		</div>
 
 		<!-- Trade Shows Section -->
-		<div class="seerem container">
-			<!-- Image Container -->
-			<div class="trade-shows image-container">
-				<img src="img/trade_shows.png" alt="Trade Show Logos">
-			</div>
+		<div class="trade-shows-container">
 			<!-- Trade Shows Participation Container -->
-			<div class="trade-shows-container">
-				<h2>Trade Shows</h2>
-				<p>SEEDA / SeeRem team joined Tech West Canada and Trade Commissioner Service to present our
-				technologies at the major trade shows including CES 2021 - The Global Stage for Innovation, PDAC 2021, and Collision - One of the world's biggest tech conferences.</p>
+			<h2>Trade Shows</h2>
+			<p>While developing the SeeRem application, SEEDA and the SeeRem team joined Tech West Canada and Trade Commissioner Service to present our technologies at the major trade shows.</p>
+
+
+			<div class="grid-container">
+				<!-- CES 2021 -->
+				<div>
+					<h3>CES 2021</h3>
+					<p>Consumer Technology Association is the Global Stage for Innovation</p>
+					<img src="img/Consumer_Electronics_Show.png" alt="CES 2021">
+				</div>
+
+				<!-- PDAC 2021 -->
+				<div>
+					<h3>PDAC 2021</h3>
+					<p>The World's Premier Mineral Exploration & Mining Convention</p>
+					<img src="img/pdac_logo.png" alt="PDAC 2021">
+				</div>
+
+				<!-- Collision -->
+				<div>
+					<h3>Collision</h3>
+					<p>One of the World's Biggest Tech Conferences</p>
+					<img src="img/collision_logo.png" alt="Collision">
+				</div>
 			</div>
 		</div>
 
@@ -132,13 +193,26 @@
 
 		<!-- Footer -->
 		<footer>
+			<div class="footer-social">
+				<!-- Social Media Section -->
+				<h4>SeeRem</h4>
+				<p>Helping your company See Remotely</p>
+				<section>
+					<a href="https://twitter.com/seeremotely" target="_blank"><i class="fa fa-twitter-square"></i></a>
+					<a href="https://www.facebook.com/seeremotely/" target="_blank"><i class="fa fa-facebook-square"></i></a>
+				</section>
+				<section>
+					<a href="https://www.instagram.com/seeremotely" target="_blank"><i class="fa fa-instagram"></i></a>
+					<a href="https://www.linkedin.com/company/seeremotely" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+				</section>
+			</div>
 			<div class="footer-navigation">
 				<!-- Site Navigation Section -->
 				<h4>Navigation</h4>
 				<ul>
 					<li><a href="index.html">Home</a></li>
 					<li><a href="contact.html">Contact Us</a></li>
-					<li><a href="https://www.seeda.ca/home" target="_blank">Seeda</a></li>
+					<li><a href="https://www.seeda.ca/home" target="_blank">SEEDA</a></li>
 				</ul>
 			</div>
 			<div class="footer-contact">
@@ -149,18 +223,6 @@
 					<li>Email Address: support@seerem.com</li>
 					<li>Phone: +1 (403) 966 9848</li>
 				</ul>
-			</div>
-			<div class="footer-social">
-				<!-- Social Media Section -->
-				<h4>Social Media</h4>
-				<section>
-					<a href="https://twitter.com/seeremotely" target="_blank"><img src="img/twitter.png" alt="Twitter Logo"></a>
-					<a href="https://www.facebook.com/seeremotely/" target="_blank"><img src="img/facebook.png" alt="Facebook Logo"></a>
-				</section>
-				<section>
-					<a href="https://www.instagram.com/seeremotely" target="_blank"><img src="img/instagram.png" alt="Instagram Logo"></a>
-					<a href="https://www.linkedin.com/company/seeremotely" target="_blank"><img src="img/linkedin.png" alt="LinkedIn Logo"></a>
-				</section>
 			</div>
 		</footer>
 	</body>

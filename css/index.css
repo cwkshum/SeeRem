@@ -1,103 +1,115 @@
 /* Header Styling */
 .main-header{
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.15)), url(../img/header.jpg);
+  background: url(../img/header_background.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  padding: 11rem 5.8% 9rem;
+  padding: 11rem 6% 10rem;
+  margin-bottom: 2rem;
 }
 
 .main-header h1{
   font-size: 4rem;
-  text-shadow: 0.3rem 0.3rem 2rem #000000;
 }
 
 .main-header h2{
   color: #ffffff;
   width: 60%;
   margin-top: -1.5rem;
-  text-shadow: 0.3rem 0.3rem 2rem #000000;
 }
 
-/* Update Banner Text */
-.updates h2 {
-  display: block;
-  background: #ddd;
-  text-align: center;
-  margin-top: 0;
-  padding: 2rem;
-}
 
-.page-description p {
-  max-width: 90%;
-}
-
-/* About SeeRem Image Styling */
-#about-seerem .image-container{
+/* About SeeRem Description Styling */
+#about-seerem .page-description{
   flex: 1;
-  order: 2;
-  margin-top: 1.5rem;
+  margin-left: 3.5rem;
+}
+
+/* About SeeRem and Benefits Image Styling */
+#about-seerem .image-container, .benefits.image-container{
+  flex: 1;
+  order: 1;
   margin-right: 1rem;
 }
 
-#about-seerem .image-container img{
+/* About SeeRem Section Styling */
+#about-seerem .image-container{
+  margin-top: 1.5rem;
+}
+
+#about-seerem .image-container img, .benefits.image-container img{
   width: 100%;
 }
 
-/* Features, Benefits, Trade Shows Section Styling */
 .seerem.container{
   align-items: center;
 }
 
+/* Features Section Styling */
+.seerem-features-container{
+  flex: 1;
+  padding: 2rem 4rem;
+  margin-bottom: 2rem;
+  background: #ffffff;
+}
+
+.features.image-container img{
+  width: 90%;
+}
+
 .features.image-container{
   flex: 1;
-  order: 1;
-  margin-left: 1rem;
-}
-
-.trade-shows.image-container{
-  flex: 1;
-  order: 1;
-  margin-left: 1rem;
-  margin-right: 4.5rem;
-}
-
-.seerem-features-container, .trade-shows-container{
-  flex: 1;
   order: 2;
-  padding-right: 1rem;
-  padding-left: 3rem;
-  margin-bottom: 2rem;
-}
-
-.seerem-features-container p, .trade-shows-container p{
-  max-width: 100%;
-}
-
-.seerem-benefits-container p{
-  max-width: 90%;
 }
 
 .seerem-benefits-container {
   flex: 1;
-  padding-left: 1rem;
+  order: 2;
+  margin-left: 3.5rem;
   margin-bottom: 2rem;
 }
 
-.seerem-benefits-container li{
-  margin-top: 0.8rem;
-  margin-left: -1.4rem;
+/* Grid Styling for Benefits */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2rem 3rem;
+  margin-top: 2rem;
 }
 
-.benefits.image-container {
-  flex: 1;
-  order: 1;
-  padding-left: 4rem;
+/* Grid Icon Styling */
+.grid-container i{
+  color: #AE3034;
+  font-size: 3rem;
 }
 
-.features.image-container img, .benefits.image-container img, .trade-shows.image-container img{
-  width: 90%;
+.grid-container h3{
+  color: #000000;
+}
+
+.grid-container img{
+  width: 100%;
+}
+
+/* Trade Shows Section Styling */
+.trade-shows-container{
+  padding: 2.5rem 6%;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.trade-shows-container h2, .trade-shows-container > p{
+  padding: 0 15%;
+}
+
+.trade-shows-container > .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  column-gap: 6rem;
+  margin-top: 2rem;
 }
 
 
@@ -115,7 +127,8 @@
 @media screen and (max-width:30rem){
 
   .main-header{
-    padding: 7rem 9% 3.5rem;
+    padding: 7rem 6% 3.5rem;
+    margin-bottom: 0;
   }
 
   .main-header h1{
@@ -137,57 +150,69 @@
     flex-direction: column;
   }
 
-  .page-description p, .seeda-benefits-container p{
-    max-width: 100%;
-  }
-
   #about-seerem{
     margin-top: -0.5rem;
   }
 
-  #about-seerem .image-container{
-    margin: 0 auto;
-    margin-top: 6rem;
-    max-width: 90%;
+  #about-seerem .page-description{
+    margin-left: 0;
   }
 
-  .seerem-features-container, .trade-shows-container{
-    order: 1;
-    padding-left: 1rem;
-    margin-top: -3rem;
+  #about-seerem .image-container{
+    margin: 0 auto;
+    margin-top: 5rem;
+    max-width: 100%;
+  }
+
+  #about-seerem .image-container, .benefits.image-container{
+    order: 2;
+  }
+
+  .seerem-features-container{
+    padding: 0;
+    background: #F5F5F5;
+    margin-top: -1.5rem;
   }
 
   .features.image-container{
     order: 2;
-    margin-top: -0.5rem;
     max-width: 100%;
     padding-left: 2rem;
   }
 
-  .trade-shows.image-container{
-    order: 2;
-    margin-top: -0.5rem;
-    max-width: 60%;
-    padding-left: 4rem;
-    margin-bottom: 1rem;
-  }
-
   .seerem-benefits-container {
-    padding-left: 1rem;
-    margin-top: -3rem;
+    order: 1;
+    margin-left: 0;
+    margin-bottom: 4rem;
+    margin-top: -1.5rem;
   }
 
   .benefits.image-container{
+    max-width: 100%;
     margin-top: -1rem;
-    max-width: 90%;
-    padding-left: 2rem;
+  }
+
+  .trade-shows-container h2, .trade-shows-container > p{
+    padding: 0;
+  }
+
+  .trade-shows-container img{
+    width: 70%;
+  }
+
+  .trade-shows-container > .grid-container {
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    margin-top: 1.5rem;
+    margin-bottom: -10rem;
   }
 }
 
 /* Screen size of 480px - 800px */
 @media screen and (min-width:30rem) and (max-width: 50rem){
   .main-header{
-    padding: 8rem 7% 5rem;
+    padding: 8rem 6% 5rem;
+    margin-bottom: 0;
   }
 
   .main-header h1{
@@ -200,21 +225,16 @@
     margin-top: -1.5rem;
   }
 
-  .updates h2 {
-    padding: 1.5rem 0.8rem;
-    font-size: 1rem;
-  }
-
   .container {
     flex-direction: column;
   }
 
-  .page-description p, .seeda-benefits-container p{
-    max-width: 100%;
-  }
-
   #about-seerem{
     margin-top: -0.5rem;
+  }
+
+  #about-seerem .page-description{
+    margin-left: 0;
   }
 
   #about-seerem .image-container{
@@ -223,35 +243,45 @@
     max-width: 90%;
   }
 
-  .seerem-features-container, .trade-shows-container {
-    padding-left: 1rem;
-    order: 1;
+  #about-seerem .image-container, .benefits.image-container{
+    order: 2;
+  }
+
+  .seerem-features-container{
+    padding: 0;
+    background: #F5F5F5;
   }
 
   .features.image-container{
-    margin-top: 0;
     order: 2;
     max-width: 90%;
-    padding-left: 4rem;
-  }
-
-  .trade-shows.image-container{
-    margin-top: 0;
-    order: 2;
-    max-width: 60%;
-    padding-left: 4rem;
-    margin-bottom: 2rem;
-    margin-left: 3.5rem;
+    padding-left: 2.5rem;
   }
 
   .seerem-benefits-container {
-    padding-left: 1rem;
+    order: 1;
+    margin-left: 0;
+    margin-bottom: 4rem;
   }
 
   .benefits.image-container{
-    margin-top: -1.5rem;
     max-width: 90%;
-    padding-left: 4rem;
+    margin: 0 auto;
+  }
+
+  .trade-shows-container h2, .trade-shows-container > p{
+    padding: 0;
+  }
+
+  .trade-shows-container img{
+    width: 70%;
+  }
+
+  .trade-shows-container > .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-top: 1.5rem;
+    margin-bottom: -10rem;
   }
 }
 
@@ -259,7 +289,8 @@
 @media screen and (min-width: 50rem) and (max-width: 60rem){
 
   .main-header{
-    padding: 9rem 3.8rem 6rem;
+    padding: 9rem 6% 6rem;
+    margin-bottom: 1rem;
   }
 
   .main-header h1{
@@ -276,8 +307,8 @@
     flex-direction: column;
   }
 
-  .page-description p, .seeda-benefits-container p{
-    max-width: 100%;
+  #about-seerem .page-description{
+    margin-left: 0;
   }
 
   #about-seerem .image-container{
@@ -286,32 +317,39 @@
     max-width: 90%;
   }
 
-  .seerem-features-container, .trade-shows-container {
-    order: 1;
-    padding-left: 1rem;
+  #about-seerem .image-container, .benefits.image-container{
+    order: 2;
+  }
+
+  .seerem-features-container{
+    padding: 0;
+    background: #F5F5F5;
   }
 
   .features.image-container{
     order: 2;
     max-width: 80%;
-    padding-left: 6rem;
-  }
-
-  .trade-shows.image-container{
-    order: 2;
-    max-width: 60%;
-    padding-left: 6rem;
-    margin-bottom: 2rem;
+    padding-left: 3rem;
   }
 
   .seerem-benefits-container {
-    padding-left: 1rem;
+    order: 1;
+    margin-left: 0;
+    margin-bottom: 4rem;
   }
 
   .benefits.image-container{
-    margin-top: -2rem;
     max-width: 80%;
-    padding-left: 6rem;
+    margin: 0 auto;
+  }
+
+  .trade-shows-container h2, .trade-shows-container > p{
+    padding: 0;
+  }
+
+  .trade-shows-container > .grid-container {
+    column-gap: 4rem;
+    margin-top: 1.5rem;
   }
 }
 
@@ -322,14 +360,5 @@
     width: 26rem;
     font-size: 1.5rem;
     margin-top: -1.8rem;
-  }
-
-  .trade-shows.image-container{
-    max-width: 40%;
-    box-sizing: border-box;
-    padding: 3%;
-
-    margin-left: 2rem;
-    margin-right: 4rem;
   }
 }

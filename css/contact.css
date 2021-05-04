@@ -27,7 +27,6 @@
 .form-container{
 	flex: 1;
 	padding: 2rem;
-	margin-right: 1rem;
 	margin-bottom: 3rem;
 	background: #ffffff;
 	height: 40rem;
@@ -50,7 +49,7 @@
 @media screen and (max-width:30rem){
 
 	.sub-header{
-		padding: 7.5rem 2.5rem 2.5rem;
+		padding: 7.5rem 6% 2.5rem;
 	}
 
 	.sub-header h1{
@@ -83,7 +82,6 @@
 		padding: 1rem;
 		margin-top: 2rem;
 		height: 60rem;
-		margin-left: 1rem;
 	}
 
 	.contact-form-container{
@@ -96,7 +94,7 @@
 @media screen and (min-width: 30rem) and (max-width: 56rem){
 
 	.sub-header{
-		padding: 8rem 6.8% 3rem;
+		padding: 8rem 6% 3rem;
 	}
 
 	.sub-header h1{
@@ -116,7 +114,6 @@
 	.form-container{
 		margin-top: 2rem;
 		height: 50rem;
-		margin-left: 1rem;
 	}
 }
 
@@ -124,7 +121,7 @@
 @media screen and (min-width: 56rem) and (max-width: 74rem){
 
 	.sub-header{
-		padding: 9rem 6.4% 5rem;
+		padding: 9rem 6% 5rem;
 	}
 
 	.container{
@@ -139,6 +136,5 @@
 	.form-container{
 		margin-top: 2rem;
 		height: 50rem;
-		margin-left: 1rem;
 	}
 }
