@@ -35,15 +35,16 @@
 
 /* MEDIA QUERIES */
 /* Screen size below 480px */
-@media screen and (max-width:30rem){
+	@media screen and (max-width:30rem){
 	.sub-header h2{
 		margin-top: -0.5rem;
-		width: 23rem;
+		width: 85%;
 		font-size: 0.80rem;
 	}
 
 	.page-description img{
 		padding-right: 0%;
+		width:  100%;
 	}
 }
 
