@@ -1,0 +1,74 @@
+/* Header background */
+.sub-header{
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.41), rgba(0, 0, 0, 0.41)), url(../img/solution_header.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+/* Header headings */
+.sub-header h1{
+	max-width: 100%;
+}
+
+.sub-header h2{
+  color: #ffffff;
+  width: 60%;
+  margin-top: -1rem;
+  font-size: 1.2rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Page Description Image */
+.page-description img{
+	max-width: 100%;
+	display: block;
+	margin: 0 auto;
+	padding-right: 10%;
+}
+
+/* Form Styling */
+.form-container{
+	height: 50rem;
+}
+
+/* MEDIA QUERIES */
+/* Screen size below 480px */
+@media screen and (max-width:30rem){
+	.sub-header h2{
+		margin-top: -0.5rem;
+		width: 23rem;
+		font-size: 0.80rem;
+	}
+
+	.page-description img{
+		padding-right: 0%;
+	}
+}
+
+/* Screen size of 480px - 896px */
+@media screen and (min-width: 30rem) and (max-width: 56rem){
+	.sub-header h2{
+		width: 28rem;
+		font-size: 1rem;
+	}
+
+	.page-description img{
+		padding-right: 0%;
+	}
+}
+
+/* Screen size above 960px */
+@media screen and (min-width:56rem){
+	.sub-header h2 {
+		width: 35rem;
+	}
+}
+
+/* Screen size of 896px - 1184px */
+@media screen and (min-width: 56rem) and (max-width: 74rem){
+	.page-description img{
+		padding-right: 0%;
+	}
+}

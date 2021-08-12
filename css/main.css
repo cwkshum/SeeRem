@@ -385,8 +385,7 @@ footer li{
 }
 
 /* Screen size of 480px - 1040px */
-@media screen and (min-width:30rem) and (max-width:65rem){
-
+@media screen and (min-width:30rem) and (max-width:70rem){
 	footer {
 		flex-direction: column;
 		text-align: center;
@@ -425,7 +424,6 @@ footer li{
 
 /* Screen size of 1040px - 1440px */
 @media screen and (min-width:65rem) and (max-width:90rem){
-
 	#scrollUpbtn {
 		right: 0.2rem;
 	}
@@ -443,7 +441,7 @@ footer li{
 /* ADDITIONAL MEDIA QUERIES FOR FORMS */
 /* Screen size of 480px - 800px */
 @media screen and (min-width:30rem) and (max-width: 50rem){
-  	.container{
+	.container{
 		flex-direction: column;
 	}
 
@@ -453,7 +451,6 @@ footer li{
 		max-width: 75%;
 	}
 }
-
 
 
 /* For Responsive Navigation */
